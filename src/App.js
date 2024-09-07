@@ -1,10 +1,10 @@
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
-import ProjectPage from "./components/ProjectPage";
-import SkillsPage from "./components/SkillsPage";
+import ProjectPage from "./pages/ProjectPage";
+import SkillsPage from "./pages/SkillsPage";
 import Footer from "./components/Footer";
 import "./App.css";
-import ContactPage from "./components/ContactPage";
+import ContactPage from "./pages/ContactPage";
 
 function App() {
   return (

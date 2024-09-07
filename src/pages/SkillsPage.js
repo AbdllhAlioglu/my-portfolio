@@ -1,7 +1,7 @@
 import styles from "./SkillsPage.module.css";
 
-import SkillsDescription from "./SkillsDescription";
-import Skills from "./Skills";
+import SkillsDescription from "../components/SkillsDescription";
+import Skills from "../components/Skills";
 
 function SkillsPage() {
   return (

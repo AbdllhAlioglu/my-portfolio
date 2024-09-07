@@ -1,6 +1,6 @@
-import ProjectDescription from "./ProjectDescription";
+import ProjectDescription from "../components/ProjectDescription";
 import styles from "./ProjectPage.module.css";
-import Projects from "./Projects";
+import Projects from "../components/Projects";
 
 function ProjectPage() {
   return (

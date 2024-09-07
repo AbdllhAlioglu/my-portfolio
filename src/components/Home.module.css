@@ -5,6 +5,7 @@
   align-items: center; /* İçeriği dikeyde ortala */
   justify-items: center; /* İçeriği yatayda ortala */
   height: 100vh; /* Sayfanın tamamını kapla */
+  background-color: #f4f4f4;
 }
 
 .context {
@@ -28,12 +29,13 @@
 }
 
 .btn {
-  border-radius: 50px;
-  font-size: 16px;
   padding: 1rem;
+  border: none;
+  color: aliceblue;
+  background-color: #007bff;
 }
 
 .btn:hover {
-  background-color: rgba(53, 36, 163, 0.751);
+  background-color: #0056b3;
   color: white;
 }
