@@ -1,32 +1,46 @@
 .nav {
   display: flex;
   justify-content: space-between;
-  background-color: #d4d4d4;
-  box-shadow: 0 2px 2px rgba(1, 1, 1, 0.1); /* Gölge ekler */
-  position: fixed; /* Sabit pozisyon */
-  top: 0; /* Ekranın üst kısmında kalır */
-  width: 100%; /* Genişliği tam ekran */
-  z-index: 1000; /* Üstte kalmasını sağlar */
-}
-
-h1 {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  margin-left: 3rem;
+  background-color: #d9d9d9;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #928c8cc5;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
-ul {
+.nav h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.nav ul {
   display: flex;
-  margin-right: 3rem;
-}
-
-ul li {
-  margin: 1rem;
   list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 2rem; /* Menü elemanları arasındaki boşluk */
 }
 
-ul li a {
-  text-decoration: none;
-  color: #2a2929;
+.nav li {
+  display: flex;
+  align-items: center;
+}
+
+.nav a {
+  text-decoration: none; /* Alt çizgiyi kaldır */
+  color: #333; /* Varsayılan yazı rengi */
+  font-weight: 500;
+  transition: color 0.3s ease, border-bottom 0.3s ease; /* Renk ve alt çizgi geçişi */
+  padding-bottom: 2px; /* Alt çizgi efekti için boşluk */
+  border-bottom: 2px solid transparent; /* Alt çizgi başlangıçta görünmez */
+}
+
+.nav a:hover {
+  color: #007bff; /* Hover durumunda yazı rengi */
+  border-bottom: 2px solid #007bff; /* Hover durumunda alt çizgi */
 }

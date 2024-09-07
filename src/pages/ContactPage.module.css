@@ -1,3 +1,10 @@
-body {
-  background-color: #d4d4d4;
+.desc {
+  background-color: #d4d4d4; /* Arka plan rengi */
+  height: 100vh;
+  padding-top: 3rem;
+}
+@media (max-width: 768px) {
+  .desc {
+    padding: 10px; /* Küçük ekranlar için padding'i azalt */
+  }
 }

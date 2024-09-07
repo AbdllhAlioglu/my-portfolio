@@ -5,7 +5,7 @@ import styles from "./ContactPage.module.css";
 
 export default function ContactPage() {
   return (
-    <div>
+    <div className={styles.desc}>
       <ContactDesription />
       <ContactInfo />
     </div>

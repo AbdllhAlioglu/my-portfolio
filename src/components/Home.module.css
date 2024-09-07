@@ -4,38 +4,46 @@
   gap: 10px; /* İki sütun arasındaki boşluk */
   align-items: center; /* İçeriği dikeyde ortala */
   justify-items: center; /* İçeriği yatayda ortala */
-  height: 100vh; /* Sayfanın tamamını kapla */
+  height: 100%;
   background-color: #f4f4f4;
+  height: 100vh;
 }
 
 .context {
   margin-left: 4rem;
 }
 
+.btnGroup {
+  display: flex;
+  gap: 1rem;
+  justify-content: start;
+  margin-top: 2rem;
+  margin-left: 0.5rem;
+}
+
+.btnGroup a {
+  text-decoration: none; /* Alt çizgiyi kaldırır */
+  color: #fff;
+  background-color: #007bff; /* Buton rengi */
+  padding: 0.75rem 1.5rem; /* Buton içi boşluk */
+  border-radius: 4px; /* Köşe yuvarlama */
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Geçiş efektleri */
+}
+
+.btnGroup a:hover {
+  background-color: #0056b3; /* Hover durumunda buton rengi */
+  transform: translateY(-2px); /* Hover durumunda hafif hareket */
+}
+
 .image {
-  font-size: 16px;
+  margin-top: 2rem;
 }
 
 .image img {
-  width: 400px; /* Resmin genişliğini ayarla */
-  height: auto; /* Oranları koruyarak yüksekliği otomatik ayarla */
-  /* Resmi yuvarlak yap (isteğe bağlı) */
-}
-
-.btnGroup {
-  display: flex;
-  margin-top: 2rem;
-  gap: 2rem;
-}
-
-.btn {
-  padding: 1rem;
-  border: none;
-  color: aliceblue;
-  background-color: #007bff;
-}
-
-.btn:hover {
-  background-color: #0056b3;
-  color: white;
+  width: 15rem; /* Resim genişliği */
+  height: auto; /* Oranları koruyarak yükseklik ayarla */
+  border-radius: 50%; /* Yuvarlak köşeler */
+  border: 2px solid #ddd; /* Çerçeve rengi */
 }

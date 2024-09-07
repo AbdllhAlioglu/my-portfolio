@@ -1,25 +1,26 @@
+import { Link } from "react-router-dom";
 import styles from "./Navbar.module.css";
 function Navbar() {
   return (
-    <div>
-      <nav className={styles.nav}>
-        <h1>Abdullah Alioğlu</h1>
-        <ul>
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="/">Project</a>
-          </li>
-          <li>
-            <a href="/">Skills</a>
-          </li>
-          <li>
-            <a href="/">Contacts</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <nav className={styles.nav}>
+      <h1>
+        <Link to="/">Abdullah Alioğlu</Link>
+      </h1>
+      <ul>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/projects">Project</Link>
+        </li>
+        <li>
+          <Link to="/skills">Skills</Link>
+        </li>
+        <li>
+          <Link to="/contact">Contact</Link>
+        </li>
+      </ul>
+    </nav>
   );
 }
 
