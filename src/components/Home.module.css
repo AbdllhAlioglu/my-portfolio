@@ -1,0 +1,39 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* İki sütun oluştur */
+  gap: 10px; /* İki sütun arasındaki boşluk */
+  align-items: center; /* İçeriği dikeyde ortala */
+  justify-items: center; /* İçeriği yatayda ortala */
+  height: 100vh; /* Sayfanın tamamını kapla */
+}
+
+.context {
+  margin-left: 4rem;
+}
+
+.image {
+  font-size: 16px;
+}
+
+.image img {
+  width: 400px; /* Resmin genişliğini ayarla */
+  height: auto; /* Oranları koruyarak yüksekliği otomatik ayarla */
+  /* Resmi yuvarlak yap (isteğe bağlı) */
+}
+
+.btnGroup {
+  display: flex;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+.btn {
+  border-radius: 50px;
+  font-size: 16px;
+  padding: 1rem;
+}
+
+.btn:hover {
+  background-color: rgba(53, 36, 163, 0.751);
+  color: white;
+}

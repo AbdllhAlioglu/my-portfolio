@@ -1,0 +1,16 @@
+.button {
+  background-color: #007bff; /* Buton rengi */
+  color: #fff; /* Yazı rengi */
+  border: none; /* Kenarlık yok */
+  border-radius: 2px; /* Köşeleri yuvarlatma */
+  padding: 4px 8px; /* İç boşluk */
+  font-size: 0.875rem; /* Yazı boyutu */
+  cursor: pointer; /* Üzerine gelindiğinde el işareti */
+  transition: background-color 0.3s ease; /* Hover animasyonu */
+  margin: 0.5rem auto; /* Dış boşluk */
+  display: inline-block; /* İçeriği düzgün şekilde ortalar */
+}
+
+.button:hover {
+  background-color: #0056b3; /* Hover'da renk değişimi */
+}

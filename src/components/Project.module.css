@@ -1,0 +1,60 @@
+.project {
+  display: flex;
+  flex-direction: column; /* Dikey hizalama */
+  align-items: center; /* Ortalar */
+  background-color: #f9f9f9; /* Arka plan rengi */
+  border-radius: 12px; /* Köşeleri yuvarlatma */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+  overflow: hidden; /* Taşan kısımları gizler */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover animasyonu */
+  max-width: 320px; /* Maksimum genişlik */
+  margin: 10px; /* Kartlar arasında boşluk */
+}
+
+.project:hover {
+  transform: translateY(-10px); /* Hover'da hafif yukarı kaldırır */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Hover'da gölgeyi artırır */
+}
+
+.project > div:first-child {
+  width: 100%;
+  height: 180px; /* Görselin yüksekliği */
+  background-color: #ddd; /* Görsel yüklenmediğinde arka plan */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Görselin taşmasını engeller */
+}
+
+.project img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Görseli orantılı şekilde kırpar */
+}
+
+.project > div:nth-child(2) {
+  padding: 20px;
+  text-align: center;
+}
+
+.project h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.5rem;
+  color: #333; /* Başlık rengi */
+}
+
+.project p {
+  margin: 0;
+  color: #666; /* Açıklama metni rengi */
+  font-size: 1rem;
+  line-height: 1.6; /* Satırlar arası boşluk */
+}
+
+.btn {
+  padding: 10px; /* Butonlar arasında boşluk */
+  text-align: center;
+}
+
+.btn button {
+  margin: 5px; /* Butonlar arasında boşluk */
+}

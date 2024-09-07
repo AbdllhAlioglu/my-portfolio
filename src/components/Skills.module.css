@@ -1,0 +1,21 @@
+.skillsContainer {
+  padding: 20px;
+  background-color: #f0f0f5; /* Hafif bir arka plan rengi */
+}
+
+.skillsList {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(300px, 1fr)
+  ); /* Esnek grid düzeni */
+  gap: 20px; /* Projeler arasındaki boşluk */
+  list-style: none; /* Liste stili kaldırıldı */
+  padding: 0;
+  margin: 0;
+}
+
+.skillItem {
+  display: flex;
+  justify-content: center; /* Kartların ortalanmasını sağlar */
+}

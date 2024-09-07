@@ -1,0 +1,12 @@
+.desc {
+  display: flex;
+  flex-direction: column; /* İçeriği dikey hizalar */
+  align-items: center; /* İçeriği yatay ortalar */
+  text-align: center; /* Metni ortalar */
+  padding: 4rem;
+}
+
+.desc p {
+  max-width: 800px;
+  margin: 2rem;
+}
