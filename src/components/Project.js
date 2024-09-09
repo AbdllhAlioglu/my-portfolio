@@ -11,8 +11,8 @@ function Project({ projectObj }) {
         <p>{projectObj.description}</p>
       </div>
       <div className={styles.btn}>
-        <Button>View project</Button>
-        <Button>View Source</Button>
+        <Button className={styles.button}>View project</Button>
+        <Button className={styles.button}>View Source</Button>
       </div>
     </div>
   );
