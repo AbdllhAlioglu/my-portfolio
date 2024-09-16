@@ -10,6 +10,7 @@ function CertificatesAndEducation() {
       date: "March 2023",
       description:
         "Learned advanced React concepts, hooks, and state management.",
+      pdf: "",
     },
     {
       title: "Full Stack Web Development",
@@ -17,6 +18,7 @@ function CertificatesAndEducation() {
       date: "December 2022",
       description:
         "Covered HTML, CSS, JavaScript, Node.js, Express, and MongoDB.",
+      pdf: "",
     },
     {
       title: "Python for Everybody",
@@ -24,6 +26,15 @@ function CertificatesAndEducation() {
       date: "September 2022",
       description:
         "Introductory course on Python, data structures, and handling web data.",
+      pdf: "",
+    },
+    {
+      title: "JavaScript Algorithms and Data Structures",
+      institution: "freeCodeCamp",
+      date: "June 2022",
+      description:
+        "Focused on solving algorithms and mastering data structures using JavaScript.",
+      pdf: "",
     },
   ];
 
@@ -39,6 +50,14 @@ function CertificatesAndEducation() {
               <span className={styles.date}>{cert.date}</span>
             </p>
             <p className={styles.description}>{cert.description}</p>
+            <a
+              href={cert.pdf}
+              className={styles.pdfLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Certificate (PDF)
+            </a>
           </li>
         ))}
       </ul>

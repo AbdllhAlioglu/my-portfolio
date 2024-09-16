@@ -1,6 +1,7 @@
 .projectsContainer {
   padding: 20px;
-  background-color: #f0f0f5; /* Hafif bir arka plan rengi */
+  background-color: #c6c6c6; /* Hafif bir arka plan rengi */
+  border-radius: 25px;
 }
 
 .projectsList {

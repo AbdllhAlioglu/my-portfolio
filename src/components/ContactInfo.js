@@ -8,7 +8,6 @@ function ContactInfo() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Burada form verilerini işleme kodunu ekleyebilirsiniz
     console.log("Name:", name);
     console.log("Email:", email);
     console.log("Message:", message);

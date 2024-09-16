@@ -4,21 +4,23 @@
   gap: 10px; /* İki sütun arasındaki boşluk */
   align-items: center; /* İçeriği dikeyde ortala */
   justify-items: center; /* İçeriği yatayda ortala */
-  height: 100%;
-  background-color: #f4f4f4;
-  height: 100vh;
+  background-color: #d4d4d4;
+  min-height: 100vh; /* Ekran yüksekliğini tam kapla */
+  place-items: center;
+  padding: 2rem;
 }
 
 .context {
   margin-left: 4rem;
+  text-align: center; /* Metin ortalamak için */
 }
 
 .btnGroup {
   display: flex;
   gap: 1rem;
-  justify-content: start;
+  justify-content: center; /* Butonları ortala */
   margin-top: 2rem;
-  margin-left: 0.5rem;
+  flex-wrap: wrap; /* Butonların taşmasını önler */
 }
 
 .btnGroup a {
@@ -39,6 +41,8 @@
 
 .image {
   margin-top: 2rem;
+  display: flex; /* Resmi ortalamak için */
+  justify-content: center;
 }
 
 .image img {
@@ -46,4 +50,41 @@
   height: auto; /* Oranları koruyarak yükseklik ayarla */
   border-radius: 50%; /* Yuvarlak köşeler */
   border: 2px solid #ddd; /* Çerçeve rengi */
+}
+
+/* Responsive tasarım için medya sorguları */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr; /* Tek sütunlu düzen */
+    padding: 1rem; /* Ekran kenarlarından boşluk */
+  }
+
+  .context {
+    margin-left: 0;
+    text-align: center; /* Metin ortalamak için */
+  }
+
+  .btnGroup {
+    flex-direction: column; /* Butonları dikeyde hizala */
+    gap: 1rem; /* Butonlar arasındaki boşluk */
+  }
+
+  .image {
+    margin-top: 1rem; /* Resim üstü boşluk */
+  }
+
+  .image img {
+    width: 10rem; /* Küçük ekranlarda resim genişliği */
+  }
+}
+
+@media (max-width: 480px) {
+  .btnGroup a {
+    font-size: 0.9rem; /* Küçük ekranlarda buton yazı boyutu */
+    padding: 0.5rem 1rem; /* Küçük ekranlarda buton içi boşluk */
+  }
+
+  .image img {
+    width: 8rem; /* Daha küçük ekranlarda resim genişliği */
+  }
 }

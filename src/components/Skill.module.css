@@ -11,6 +11,7 @@
   max-width: 280px;
   margin: 15px;
   padding: 15px;
+  /* Flexbox özelliği ile daha iyi hizalama */
 }
 
 .skill:hover {
@@ -45,4 +46,44 @@ p {
   font-size: 0.9rem;
   line-height: 1.4;
   text-align: left;
+}
+
+/* Responsive düzenlemeler */
+@media (max-width: 768px) {
+  .skill {
+    max-width: 100%; /* Küçük ekranlarda tam genişlik */
+    margin: 10px 0; /* Yüksekliği azalt */
+    padding: 10px; /* Padding'i azalt */
+  }
+
+  .icon {
+    font-size: 3rem; /* Küçük ekranlarda ikon boyutunu küçült */
+  }
+
+  h3 {
+    font-size: 1.1rem; /* Başlık boyutunu azalt */
+  }
+
+  p {
+    font-size: 0.8rem; /* Metin boyutunu azalt */
+  }
+}
+
+@media (max-width: 480px) {
+  .skill {
+    margin: 5px 0; /* Çok küçük ekranlarda daha küçük boşluk */
+    padding: 5px; /* Padding'i daha da azalt */
+  }
+
+  .icon {
+    font-size: 2.5rem; /* Çok küçük ekranlarda ikon boyutunu küçült */
+  }
+
+  h3 {
+    font-size: 1rem; /* Başlık boyutunu daha da azalt */
+  }
+
+  p {
+    font-size: 0.7rem; /* Metin boyutunu daha da küçült */
+  }
 }

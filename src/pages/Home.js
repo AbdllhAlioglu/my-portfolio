@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import styles from "./Home.module.css";
+
 function Home() {
   return (
     <div className={styles.container}>
@@ -17,7 +18,7 @@ function Home() {
         </div>
       </div>
       <div className={styles.image}>
-        <img src="/avatar.jpg" alt="avatar" />
+        <img src="./images/avatar.jpg" alt="avatar" />
       </div>
     </div>
   );

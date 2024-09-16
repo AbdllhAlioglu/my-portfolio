@@ -1,42 +1,77 @@
 .nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  background-color: #d9d9d9;
+  justify-content: space-between;
   padding: 1rem 2rem;
-  border-bottom: 1px solid #928c8cc5;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #f4f4f4;
+  flex-wrap: wrap; /* İçeriği sarar ve alan dolduğunda aşağıya kaydırır */
 }
 
-.nav h1 {
-  margin: 0;
+.logo {
+  width: 60px; /* Adjust as needed */
+  height: auto;
+  transition: transform 0.3s ease-in-out; /* Adding transition for smooth animation */
+}
+
+.logo:hover {
+  transform: scale(1.4); /* Scale the logo to 110% on hover */
+}
+.menuButton {
+  display: none; /* Başlangıçta gizli */
+  background: none;
+  border: none;
   font-size: 1.5rem;
-  color: #333;
+  cursor: pointer;
 }
 
-.nav ul {
+.menu {
   display: flex;
   list-style: none;
-  padding: 0;
-  margin: 0;
-  gap: 2rem; /* Menü elemanları arasındaki boşluk */
+  gap: 1.5rem;
 }
 
-.nav li {
-  display: flex;
-  align-items: center;
+.menu.open {
+  display: flex; /* Açıldığında menü görünür */
+  flex-direction: column; /* Dikey düzen */
+  width: 100%; /* Tam genişlik alır */
+  padding: 1rem 0; /* İçerik aralığı */
 }
 
-.nav a {
-  text-decoration: none; /* Alt çizgiyi kaldır */
-  color: #333; /* Varsayılan yazı rengi */
-  font-weight: 500;
-  transition: color 0.3s ease, border-bottom 0.3s ease; /* Renk ve alt çizgi geçişi */
-  padding-bottom: 2px; /* Alt çizgi efekti için boşluk */
-  border-bottom: 2px solid transparent; /* Alt çizgi başlangıçta görünmez */
+/* Linkler için stil */
+ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
-.nav a:hover {
-  color: #007bff; /* Hover durumunda yazı rengi */
-  border-bottom: 2px solid #007bff; /* Hover durumunda alt çizgi */
+ul li a:hover {
+  color: #007bff;
+}
+
+/* Küçük ekranlar için medya sorgusu */
+@media (max-width: 768px) {
+  .menu {
+    display: none; /* Menü gizle */
+    flex-direction: row; /* Dikey düzen */
+    width: 100%; /* Tam genişlik alır */
+    padding: 1rem 0; /* İçerik aralığı */
+  }
+
+  .menu.open {
+    display: flex; /* Açıldığında menü görünür */
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menuButton {
+    display: flex; /* Küçük ekranlarda göster */
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav {
+    flex-direction: row; /* Navbarı dikey olarak hizala */
+    align-items: flex-start; /* Menü butonunu sola hizala */
+  }
 }

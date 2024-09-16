@@ -13,7 +13,7 @@ import WarningModal from "./components/WarningModal"; // Uyarı modalını ekled
 function App() {
   return (
     <BrowserRouter>
-      <div>
+      <div className="container">
         <Navbar />
         <WarningModal /> {/* Uyarı modalını göster */}
         <Routes>

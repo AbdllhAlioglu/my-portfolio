@@ -6,18 +6,15 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 
-import styles from "./Footer.module.css"; // CSS modülünü içe aktar
+import styles from "./Footer.module.css";
 
 export default function Footer() {
   return (
     <div className={styles.footer}>
-      {/* Ana kapsayıcıya stil uygulandı */}
       <div>
-        <span>© 2024 Abdullah Alioglu. All rights reserved.</span>
+        <span>© 2024 Abdullah Alioğlu. All rights reserved.</span>
       </div>
       <div className={styles.icons}>
-        {" "}
-        {/* İkon kapsayıcıya stil uygulandı */}
         <FontAwesomeIcon
           icon={faGithub}
           size="2x"

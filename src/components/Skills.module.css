@@ -1,15 +1,17 @@
+/* Skills.module.css */
 .skillsContainer {
   padding: 20px;
-  background-color: #f0f0f5; /* Hafif bir arka plan rengi */
+  background-color: #c6c6c6; /* Hafif bir arka plan rengi */
+  border-radius: 25px;
 }
 
 .skillsList {
   display: grid;
   grid-template-columns: repeat(
     auto-fill,
-    minmax(300px, 1fr)
+    minmax(280px, 1fr)
   ); /* Esnek grid düzeni */
-  gap: 20px; /* Projeler arasındaki boşluk */
+  gap: 20px; /* Kartlar arasındaki boşluk */
   list-style: none; /* Liste stili kaldırıldı */
   padding: 0;
   margin: 0;
@@ -18,4 +20,24 @@
 .skillItem {
   display: flex;
   justify-content: center; /* Kartların ortalanmasını sağlar */
+  align-items: center; /* Yükseklik ortalamasını sağlar */
+}
+
+/* Responsive düzenlemeler */
+@media (max-width: 768px) {
+  .skillsList {
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(250px, 1fr)
+    ); /* Küçük ekranlarda kart genişliklerini biraz küçült */
+  }
+}
+
+@media (max-width: 480px) {
+  .skillsList {
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(200px, 1fr)
+    ); /* Çok küçük ekranlarda kart genişliklerini daha da küçült */
+  }
 }

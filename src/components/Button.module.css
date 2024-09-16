@@ -1,17 +1,17 @@
 .button {
-  background-color: #007bff; /* Buton rengi */
-  color: #fff; /* Yazı rengi */
-  border: none; /* Kenarlık yok */
-  border-radius: 10px; /* Köşeleri yuvarlatma */
-  padding: 4px 8px; /* İç boşluk */
-  font-size: 0.875rem; /* Yazı boyutu */
-  cursor: pointer; /* Üzerine gelindiğinde el işareti */
-  transition: background-color 0.3s ease; /* Hover animasyonu */
-  margin: 0.5rem auto; /* Dış boşluk */
-  display: inline-block; /* İçeriği düzgün şekilde ortalar */
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 4px 8px;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0.5rem auto;
+  display: inline-block;
   font-size: 1rem;
 }
 
 .button:hover {
-  background-color: green; /* Hover'da renk değişimi */
+  background-color: green;
 }

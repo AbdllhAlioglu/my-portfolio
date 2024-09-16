@@ -8,22 +8,27 @@ import {
 export const projectsData = [
   {
     name: "Date Counter",
-    description: "Bread with italian olive oil and rosemary",
+    description:
+      "A tool to calculate and display the difference between dates.",
     photoName: "/images/date-counter.png",
+    url: "https://abdllhalioglu.github.io/date-counter/",
+    source: "https://github.com/AbdllhAlioglu/date-counter",
   },
   {
     name: "UsePopCorn",
-    description: "Bread with italian olive oil and rosemary",
+    description:
+      "A movie database app using the OMDb API for fetching details.",
     photoName: "/images/usePopCorn.png",
   },
   {
     name: "Fikirtepe",
-    description: "Bread with italian olive oil and rosemary",
+    description: "A web app showcasing construction projects with summaries.",
     photoName: "/images/Fikirtepe.png",
+    url: "https://abdllhalioglu.github.io/Fikirtepe/",
   },
   {
     name: "Pizza-Menu",
-    description: "Bread with italian olive oil and rosemary",
+    description: "An interactive menu displaying various pizzas with details.",
     photoName: "/images/Pizza.png",
   },
 ];

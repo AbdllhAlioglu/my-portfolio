@@ -1,14 +1,16 @@
 .footer {
   display: flex;
-  justify-content: space-between; /* İçeriği yatayda dağıtmak için */
-  align-items: center; /* Dikeyde hizalama */
+  justify-content: space-between;
+  align-items: center;
   padding: 20px;
-  background-color: #2c2c2c; /* Arka plan rengi */
-  color: #d4d4d4; /* Metin rengi */
+  background-color: #2c2c2c;
+  color: #d4d4d4;
+
+  width: 100%;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Üstten gelen gölge efekti */
 }
 
-/* İkonları barındıran kapsayıcı stil */
 .icons {
   display: flex;
-  gap: 15px; /* İkonlar arasındaki boşluk */
+  gap: 15px;
 }

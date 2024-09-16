@@ -1,12 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import styles from "./WarningModal.module.css";
 
 function WarningModal() {
   const [showModal, setShowModal] = useState(true);
-
-  const handleClose = () => {
-    setShowModal(false);
-  };
 
   const handleConfirm = () => {
     setShowModal(false);

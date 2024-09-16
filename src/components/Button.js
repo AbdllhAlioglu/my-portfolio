@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Button.module.css"; // CSS stil dosyası
+import styles from "./Button.module.css";
 
 function Button({ onClick, children, className }) {
   return (

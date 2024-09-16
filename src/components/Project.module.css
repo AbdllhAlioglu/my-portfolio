@@ -58,3 +58,43 @@
 .btn button {
   margin: 5px; /* Butonlar arasında boşluk */
 }
+
+/* Küçük ekranlar için düzenleme */
+@media (max-width: 768px) {
+  .project {
+    max-width: 100%; /* Kartın genişliği ekran genişliğine uyacak şekilde ayarla */
+    margin: 10px 0; /* Üst ve alt boşlukları azalt */
+  }
+
+  .project > div:first-child {
+    height: 150px; /* Küçük ekranlar için görselin yüksekliğini azalt */
+  }
+
+  .project h3 {
+    font-size: 1.25rem; /* Başlık boyutunu küçült */
+  }
+
+  .project p {
+    font-size: 0.9rem; /* Açıklama metni boyutunu küçült */
+  }
+}
+
+/* Çok küçük ekranlar için ek ayarlar */
+@media (max-width: 480px) {
+  .project {
+    max-width: 100%; /* Kartın genişliği ekran genişliğine uyacak şekilde ayarla */
+    margin: 10px 0; /* Üst ve alt boşlukları azalt */
+  }
+
+  .project > div:first-child {
+    height: 120px; /* Çok küçük ekranlar için görselin yüksekliğini azalt */
+  }
+
+  .project h3 {
+    font-size: 1rem; /* Başlık boyutunu daha da küçült */
+  }
+
+  .project p {
+    font-size: 0.8rem; /* Açıklama metni boyutunu daha da küçült */
+  }
+}
