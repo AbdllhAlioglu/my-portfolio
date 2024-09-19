@@ -6,6 +6,6 @@
 }
 @media (max-width: 768px) {
   .desc {
-    padding: 10px; /* Küçük ekranlar için padding'i azalt */
+    padding: 10px;
   }
 }

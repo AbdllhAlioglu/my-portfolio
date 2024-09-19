@@ -1,4 +1,3 @@
-/* Skill.module.css */
 .skill {
   display: flex;
   flex-direction: column;
@@ -11,12 +10,11 @@
   max-width: 280px;
   margin: 15px;
   padding: 15px;
-  /* Flexbox özelliği ile daha iyi hizalama */
 }
 
 .skill:hover {
-  transform: translateY(-10px); /* Hover'da hafif yukarı kaldırır */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Hover'da gölgeyi artırır */
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 .iconContainer {
@@ -24,13 +22,13 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 50px; /* İkon yüksekliği */
-  margin-bottom: 1rem; /* İkon ile diğer içerik arasına boşluk */
+  height: 50px;
+  margin-bottom: 1rem;
 }
 
 .icon {
-  font-size: 4rem; /* İkon boyutu */
-  color: #007bff; /* İkon rengi */
+  font-size: 4rem;
+  color: #007bff;
 }
 
 h3 {
@@ -48,42 +46,41 @@ p {
   text-align: left;
 }
 
-/* Responsive düzenlemeler */
 @media (max-width: 768px) {
   .skill {
-    max-width: 100%; /* Küçük ekranlarda tam genişlik */
-    margin: 10px 0; /* Yüksekliği azalt */
-    padding: 10px; /* Padding'i azalt */
+    max-width: 100%;
+    margin: 10px 0;
+    padding: 10px;
   }
 
   .icon {
-    font-size: 3rem; /* Küçük ekranlarda ikon boyutunu küçült */
+    font-size: 3rem;
   }
 
   h3 {
-    font-size: 1.1rem; /* Başlık boyutunu azalt */
+    font-size: 1.1rem;
   }
 
   p {
-    font-size: 0.8rem; /* Metin boyutunu azalt */
+    font-size: 0.8rem;
   }
 }
 
 @media (max-width: 480px) {
   .skill {
-    margin: 5px 0; /* Çok küçük ekranlarda daha küçük boşluk */
-    padding: 5px; /* Padding'i daha da azalt */
+    margin: 5px 0;
+    padding: 5px;
   }
 
   .icon {
-    font-size: 2.5rem; /* Çok küçük ekranlarda ikon boyutunu küçült */
+    font-size: 2.5rem;
   }
 
   h3 {
-    font-size: 1rem; /* Başlık boyutunu daha da azalt */
+    font-size: 1rem;
   }
 
   p {
-    font-size: 0.7rem; /* Metin boyutunu daha da küçült */
+    font-size: 0.7rem;
   }
 }

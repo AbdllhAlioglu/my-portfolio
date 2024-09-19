@@ -1,4 +1,3 @@
-// Skill.js
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "./Skill.module.css";
 

@@ -4,17 +4,17 @@
   justify-content: space-between;
   padding: 1rem 2rem;
   background-color: #f4f4f4;
-  flex-wrap: wrap; /* İçeriği sarar ve alan dolduğunda aşağıya kaydırır */
+  flex-wrap: wrap;
 }
 
 .logo {
-  width: 60px; /* Adjust as needed */
+  width: 60px;
   height: auto;
-  transition: transform 0.3s ease-in-out; /* Adding transition for smooth animation */
+  transition: transform 0.3s ease-in-out;
 }
 
 .logo:hover {
-  transform: scale(1.4); /* Scale the logo to 110% on hover */
+  transform: scale(1.4);
 }
 .menuButton {
   display: none; /* Başlangıçta gizli */
@@ -32,9 +32,9 @@
 
 .menu.open {
   display: flex; /* Açıldığında menü görünür */
-  flex-direction: column; /* Dikey düzen */
-  width: 100%; /* Tam genişlik alır */
-  padding: 1rem 0; /* İçerik aralığı */
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem 0;
 }
 
 /* Linkler için stil */
@@ -52,26 +52,26 @@ ul li a:hover {
 /* Küçük ekranlar için medya sorgusu */
 @media (max-width: 768px) {
   .menu {
-    display: none; /* Menü gizle */
-    flex-direction: row; /* Dikey düzen */
-    width: 100%; /* Tam genişlik alır */
-    padding: 1rem 0; /* İçerik aralığı */
+    display: none;
+    flex-direction: row;
+    width: 100%;
+    padding: 1rem 0;
   }
 
   .menu.open {
-    display: flex; /* Açıldığında menü görünür */
+    display: flex;
     align-items: center;
     justify-content: center;
   }
 
   .menuButton {
-    display: flex; /* Küçük ekranlarda göster */
+    display: flex;
     align-items: center;
     justify-content: center;
   }
 
   .nav {
-    flex-direction: row; /* Navbarı dikey olarak hizala */
-    align-items: flex-start; /* Menü butonunu sola hizala */
+    flex-direction: row;
+    align-items: flex-start;
   }
 }

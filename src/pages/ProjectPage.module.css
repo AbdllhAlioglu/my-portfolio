@@ -1,6 +1,6 @@
 .desc {
-  background-color: #d4d4d4; /* Arka plan rengi */
-  min-height: 100vh; /* Ekran yüksekliğini tam kapla */
+  background-color: #d4d4d4;
+  min-height: 100vh;
   place-items: center;
   padding: 2rem;
 }

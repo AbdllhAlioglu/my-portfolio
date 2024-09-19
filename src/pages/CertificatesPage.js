@@ -1,4 +1,3 @@
-// src/pages/CertificatesPage.js
 import React from "react";
 import CertificatesAndEducation from "../pages/CertificatesAndEducation";
 import styles from "./CertificatesPage.module.css";

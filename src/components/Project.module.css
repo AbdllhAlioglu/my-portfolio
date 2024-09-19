@@ -1,35 +1,35 @@
 .project {
   display: flex;
-  flex-direction: column; /* Dikey hizalama */
-  align-items: center; /* Ortalar */
-  background-color: #f9f9f9; /* Arka plan rengi */
-  border-radius: 12px; /* Köşeleri yuvarlatma */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge */
-  overflow: hidden; /* Taşan kısımları gizler */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover animasyonu */
-  max-width: 320px; /* Maksimum genişlik */
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 320px;
   margin: 10px; /* Kartlar arasında boşluk */
 }
 
 .project:hover {
-  transform: translateY(-10px); /* Hover'da hafif yukarı kaldırır */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Hover'da gölgeyi artırır */
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 .project > div:first-child {
   width: 100%;
-  height: 180px; /* Görselin yüksekliği */
-  background-color: #ddd; /* Görsel yüklenmediğinde arka plan */
+  height: 180px;
+  background-color: #ddd;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden; /* Görselin taşmasını engeller */
+  overflow: hidden;
 }
 
 .project img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Görseli orantılı şekilde kırpar */
+  object-fit: cover;
 }
 
 .project > div:nth-child(2) {
@@ -40,61 +40,61 @@
 .project h3 {
   margin: 0 0 10px 0;
   font-size: 1.5rem;
-  color: #333; /* Başlık rengi */
+  color: #333;
 }
 
 .project p {
   margin: 0;
-  color: #666; /* Açıklama metni rengi */
+  color: #666;
   font-size: 1rem;
-  line-height: 1.6; /* Satırlar arası boşluk */
+  line-height: 1.6;
 }
 
 .btn {
-  padding: 10px; /* Butonlar arasında boşluk */
+  padding: 10px;
   text-align: center;
 }
 
 .btn button {
-  margin: 5px; /* Butonlar arasında boşluk */
+  margin: 5px;
 }
 
 /* Küçük ekranlar için düzenleme */
 @media (max-width: 768px) {
   .project {
-    max-width: 100%; /* Kartın genişliği ekran genişliğine uyacak şekilde ayarla */
-    margin: 10px 0; /* Üst ve alt boşlukları azalt */
+    max-width: 100%;
+    margin: 10px 0;
   }
 
   .project > div:first-child {
-    height: 150px; /* Küçük ekranlar için görselin yüksekliğini azalt */
+    height: 150px;
   }
 
   .project h3 {
-    font-size: 1.25rem; /* Başlık boyutunu küçült */
+    font-size: 1.25rem;
   }
 
   .project p {
-    font-size: 0.9rem; /* Açıklama metni boyutunu küçült */
+    font-size: 0.9rem;
   }
 }
 
 /* Çok küçük ekranlar için ek ayarlar */
 @media (max-width: 480px) {
   .project {
-    max-width: 100%; /* Kartın genişliği ekran genişliğine uyacak şekilde ayarla */
-    margin: 10px 0; /* Üst ve alt boşlukları azalt */
+    max-width: 100%;
+    margin: 10px 0;
   }
 
   .project > div:first-child {
-    height: 120px; /* Çok küçük ekranlar için görselin yüksekliğini azalt */
+    height: 120px;
   }
 
   .project h3 {
-    font-size: 1rem; /* Başlık boyutunu daha da küçült */
+    font-size: 1rem;
   }
 
   .project p {
-    font-size: 0.8rem; /* Açıklama metni boyutunu daha da küçült */
+    font-size: 0.8rem;
   }
 }

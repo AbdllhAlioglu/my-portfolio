@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import styles from "./PageNotFound.module.css"; // CSS Modules olarak import ediyoruz
+import styles from "./PageNotFound.module.css";
 
 function PageNotFound() {
   return (

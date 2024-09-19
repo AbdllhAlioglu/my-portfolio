@@ -6,7 +6,7 @@ function WarningModal() {
 
   const handleConfirm = () => {
     setShowModal(false);
-    localStorage.setItem("modalClosed", "true"); // Modalı kapatıldı olarak işaretle
+    localStorage.setItem("modalClosed", "true");
   };
 
   if (!showModal) return null;

@@ -1,8 +1,8 @@
 .desc {
   display: flex;
-  flex-direction: column; /* İçeriği dikey hizalar */
-  align-items: center; /* İçeriği yatay ortalar */
-  text-align: center; /* Metni ortalar */
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   padding: 4rem;
 }
 

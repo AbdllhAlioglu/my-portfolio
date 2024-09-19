@@ -1,22 +1,19 @@
 .projectsContainer {
   padding: 20px;
-  background-color: #c6c6c6; /* Hafif bir arka plan rengi */
+  background-color: #c6c6c6;
   border-radius: 25px;
 }
 
 .projectsList {
   display: grid;
-  grid-template-columns: repeat(
-    auto-fill,
-    minmax(300px, 1fr)
-  ); /* Esnek grid düzeni */
-  gap: 20px; /* Projeler arasındaki boşluk */
-  list-style: none; /* Liste stili kaldırıldı */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  list-style: none;
   padding: 0;
   margin: 0;
 }
 
 .projectItem {
   display: flex;
-  justify-content: center; /* Kartların ortalanmasını sağlar */
+  justify-content: center;
 }

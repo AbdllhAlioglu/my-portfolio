@@ -1,90 +1,89 @@
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* İki sütun oluştur */
-  gap: 10px; /* İki sütun arasındaki boşluk */
-  align-items: center; /* İçeriği dikeyde ortala */
-  justify-items: center; /* İçeriği yatayda ortala */
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  align-items: center;
+  justify-items: center;
   background-color: #d4d4d4;
-  min-height: 100vh; /* Ekran yüksekliğini tam kapla */
+  min-height: 100vh;
   place-items: center;
   padding: 2rem;
 }
 
 .context {
   margin-left: 4rem;
-  text-align: center; /* Metin ortalamak için */
+  text-align: center;
 }
 
 .btnGroup {
   display: flex;
   gap: 1rem;
-  justify-content: center; /* Butonları ortala */
+  justify-content: center;
   margin-top: 2rem;
-  flex-wrap: wrap; /* Butonların taşmasını önler */
+  flex-wrap: wrap;
 }
 
 .btnGroup a {
-  text-decoration: none; /* Alt çizgiyi kaldırır */
+  text-decoration: none;
   color: #fff;
-  background-color: #007bff; /* Buton rengi */
-  padding: 0.75rem 1.5rem; /* Buton içi boşluk */
-  border-radius: 4px; /* Köşe yuvarlama */
+  background-color: #007bff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
   font-size: 1rem;
   font-weight: bold;
-  transition: background-color 0.3s ease, transform 0.2s ease; /* Geçiş efektleri */
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .btnGroup a:hover {
-  background-color: #0056b3; /* Hover durumunda buton rengi */
-  transform: translateY(-2px); /* Hover durumunda hafif hareket */
+  background-color: #0056b3;
+  transform: translateY(-2px);
 }
 
 .image {
   margin-top: 2rem;
-  display: flex; /* Resmi ortalamak için */
+  display: flex;
   justify-content: center;
 }
 
 .image img {
-  width: 15rem; /* Resim genişliği */
-  height: auto; /* Oranları koruyarak yükseklik ayarla */
-  border-radius: 50%; /* Yuvarlak köşeler */
-  border: 2px solid #ddd; /* Çerçeve rengi */
+  width: 15rem;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid #ddd;
 }
 
-/* Responsive tasarım için medya sorguları */
 @media (max-width: 768px) {
   .container {
-    grid-template-columns: 1fr; /* Tek sütunlu düzen */
-    padding: 1rem; /* Ekran kenarlarından boşluk */
+    grid-template-columns: 1fr;
+    padding: 1rem;
   }
 
   .context {
     margin-left: 0;
-    text-align: center; /* Metin ortalamak için */
+    text-align: center;
   }
 
   .btnGroup {
-    flex-direction: column; /* Butonları dikeyde hizala */
-    gap: 1rem; /* Butonlar arasındaki boşluk */
+    flex-direction: column;
+    gap: 1rem;
   }
 
   .image {
-    margin-top: 1rem; /* Resim üstü boşluk */
+    margin-top: 1rem;
   }
 
   .image img {
-    width: 10rem; /* Küçük ekranlarda resim genişliği */
+    width: 10rem;
   }
 }
 
 @media (max-width: 480px) {
   .btnGroup a {
-    font-size: 0.9rem; /* Küçük ekranlarda buton yazı boyutu */
-    padding: 0.5rem 1rem; /* Küçük ekranlarda buton içi boşluk */
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
   }
 
   .image img {
-    width: 8rem; /* Daha küçük ekranlarda resim genişliği */
+    width: 8rem;
   }
 }
