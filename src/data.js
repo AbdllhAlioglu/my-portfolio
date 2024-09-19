@@ -59,3 +59,38 @@ export const skillsData = [
     icon: faJava,
   },
 ];
+
+export const certificationsData = [
+  {
+    title: "React Developer Certification",
+    institution: "Coursera",
+    date: "March 2023",
+    description:
+      "Learned advanced React concepts, hooks, and state management.",
+    pdf: "",
+  },
+  {
+    title: "Full Stack Web Development",
+    institution: "Udemy",
+    date: "December 2022",
+    description:
+      "Covered HTML, CSS, JavaScript, Node.js, Express, and MongoDB.",
+    pdf: "",
+  },
+  {
+    title: "Python for Everybody",
+    institution: "edX",
+    date: "September 2022",
+    description:
+      "Introductory course on Python, data structures, and handling web data.",
+    pdf: "",
+  },
+  {
+    title: "JavaScript Algorithms and Data Structures",
+    institution: "freeCodeCamp",
+    date: "June 2022",
+    description:
+      "Focused on solving algorithms and mastering data structures using JavaScript.",
+    pdf: "",
+  },
+];
