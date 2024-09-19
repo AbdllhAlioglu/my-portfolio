@@ -1,5 +1,17 @@
-import React from "react";
+import { Link } from "react-router-dom";
+import styles from "./PageNotFound.module.css"; // CSS Modules olarak import ediyoruz
 
-export default function PageNotFound() {
-  return <div>PageNotFound</div>;
+function PageNotFound() {
+  return (
+    <div className={styles.pageNotFound}>
+      <h1>404</h1>
+      <h2>Page Not Found</h2>
+      <p>The page you are looking for doesn't exist or has been moved.</p>
+      <Link to="/" className={styles.backHome}>
+        Go Back Home
+      </Link>
+    </div>
+  );
 }
+
+export default PageNotFound;
