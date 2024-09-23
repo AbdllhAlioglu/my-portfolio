@@ -18,16 +18,26 @@ function ContactInfo() {
         email,
         message,
       });
-      setStatus(
-        alert(
-          "Thank you! Your message has been successfully sent. We will get back to you shortly."
-        )
-      );
+      setStatus("Message sent successfully!");
+
+      // 4 saniye sonra mesajı kaybet
+      setTimeout(() => {
+        setStatus("");
+      }, 4000);
     } catch (error) {
       console.error("Error sending message:", error);
       setStatus("Failed to send message.");
+
+      // 4 saniye sonra hata mesajını kaybet
+      setTimeout(() => {
+        setStatus("");
+      }, 4000);
     }
   };
+
+  // Mesaj durumuna göre sınıf belirleme
+  const messageClass =
+    status === "Message sent successfully!" ? styles.success : styles.error;
 
   return (
     <div className={styles.contactInfo}>
@@ -66,7 +76,9 @@ function ContactInfo() {
           Send Message
         </button>
       </form>
-      {status && <p>{status}</p>}
+      {status && (
+        <p className={`${styles.message} ${messageClass}`}>{status}</p>
+      )}
     </div>
   );
 }

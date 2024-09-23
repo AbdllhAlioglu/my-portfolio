@@ -58,3 +58,19 @@
 .submitButton:hover {
   background-color: #0056b3;
 }
+
+.message {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.success {
+  color: green;
+  background-color: #d4edda; /* Yeşil arka plan */
+}
+
+.error {
+  color: red;
+  background-color: #f8d7da; /* Kırmızı arka plan */
+}
