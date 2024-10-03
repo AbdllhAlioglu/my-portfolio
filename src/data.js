@@ -1,9 +1,12 @@
 import {
   faReact,
-  faNodeJs,
+  faHtml5,
   faJs,
+  faPython,
   faJava,
 } from "@fortawesome/free-brands-svg-icons";
+
+import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 
 export const projectsData = [
   {
@@ -19,17 +22,22 @@ export const projectsData = [
     description:
       "A movie database app using the OMDb API for fetching details.",
     photoName: "/images/usePopCorn.png",
+    url: "https://abdllhalioglu.github.io/usePopCorn",
+    source: "https://github.com/AbdllhAlioglu/usePopCorn",
   },
   {
     name: "Fikirtepe",
     description: "A web app showcasing construction projects with summaries.",
     photoName: "/images/Fikirtepe.png",
     url: "https://abdllhalioglu.github.io/Fikirtepe/",
+    source: "https://github.com/AbdllhAlioglu/Fikirtepe",
   },
   {
     name: "Pizza-Menu",
     description: "An interactive menu displaying various pizzas with details.",
     photoName: "/images/Pizza.png",
+    url: "https://abdllhalioglu.github.io/pizza-menu/",
+    source: "https://github.com/AbdllhAlioglu/pizza-menu",
   },
 ];
 
@@ -41,22 +49,34 @@ export const skillsData = [
     icon: faReact,
   },
   {
-    name: "Node.js",
+    name: "HTML & CSS",
     description:
-      "Experienced in building scalable and efficient back-end applications with Node.js and Express.",
-    icon: faNodeJs,
+      "Skilled in building responsive layouts and designing user interfaces using HTML5 and CSS3.",
+    icon: faHtml5,
   },
   {
-    name: "TypeScript",
+    name: "JavaScript",
     description:
-      "Proficient in using TypeScript to write more maintainable and scalable code.",
+      "Experienced in writing clean, modular, and efficient code using JavaScript for front-end and back-end development.",
     icon: faJs,
+  },
+  {
+    name: "Python",
+    description:
+      "Experienced in writing clean and efficient code for various applications and automations using Python.",
+    icon: faPython,
   },
   {
     name: "Java",
     description:
-      "Experienced in using Prisma as an ORM to interact with databases in a type-safe manner.",
+      "Proficient in Java programming for building robust and scalable applications.",
     icon: faJava,
+  },
+  {
+    name: "SQL",
+    description:
+      "Experienced in querying and managing databases efficiently using SQL for data-driven applications.",
+    icon: faDatabase,
   },
 ];
 
