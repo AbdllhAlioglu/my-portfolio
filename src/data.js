@@ -82,35 +82,37 @@ export const skillsData = [
 
 export const certificationsData = [
   {
-    title: "React Developer Certification",
-    institution: "Coursera",
-    date: "March 2023",
-    description:
-      "Learned advanced React concepts, hooks, and state management.",
-    pdf: "",
-  },
-  {
-    title: "Full Stack Web Development",
-    institution: "Udemy",
-    date: "December 2022",
-    description:
-      "Covered HTML, CSS, JavaScript, Node.js, Express, and MongoDB.",
-    pdf: "",
-  },
-  {
-    title: "Python for Everybody",
-    institution: "edX",
+    title: "Introduction to Programming with Java",
+    institution: "BTK Akademi",
     date: "September 2022",
     description:
-      "Introductory course on Python, data structures, and handling web data.",
-    pdf: "",
+      "Gained foundational knowledge in Java programming and object-oriented concepts.",
+    pdf: "/pdfs/Java.pdf", // PDF'nin yolu
+  },
+
+  {
+    title: "Git Github Workshop",
+    institution: "techcareer",
+    date: "August 2024",
+    description:
+      "Introduced version control with Git and collaboration through GitHub, covering key concepts like branching and merging.",
+    pdf: "/pdfs/Git.pdf",
   },
   {
-    title: "JavaScript Algorithms and Data Structures",
-    institution: "freeCodeCamp",
-    date: "June 2022",
+    title: "Version Controls: Git ve GitHub",
+    institution: "BTK Akademi",
+    date: "July 2024",
     description:
-      "Focused on solving algorithms and mastering data structures using JavaScript.",
-    pdf: "",
+      "Learned the fundamentals of version control using Git and collaborative workflows with GitHub.",
+    pdf: "/pdfs/Gitbtk.pdf",
+  },
+
+  {
+    title: "Complete Java Developer Course",
+    institution: "Udemy",
+    date: "March 2022",
+    description:
+      "Covered Java programming fundamentals, object-oriented principles, and application development best practices.",
+    pdf: "/pdfs/JavaUdemy.pdf",
   },
 ];

@@ -63,8 +63,36 @@
 }
 
 .pdfLink {
-  margin: 1rem;
-  color: #0156b3;
+  margin: 1rem 0;
+  color: #007bff;
+  text-decoration: none; /* Altı çizgiyi kaldır */
+  padding: 0.5rem 1rem; /* İç boşluk ekle */
+  border: 1px solid #007bff; /* Kenar çizgisi ekle */
+  border-radius: 4px; /* Kenarları yuvarla */
+  transition: background-color 0.3s, color 0.3s; /* Geçiş efekti ekle */
+}
+
+.pdfLink:hover {
+  background-color: #007bff; /* Üzerine gelindiğinde arka plan rengi değişir */
+  color: white; /* Üzerine gelindiğinde metin rengi değişir */
+}
+
+.pdfViewer {
+  margin-top: 20px;
+  text-align: center;
+  border: 1px solid #ccc; /* PDF görüntüleyici için kenar çizgisi */
+  border-radius: 8px; /* Yuvarlak köşeler */
+  padding: 1rem; /* İç boşluk ekle */
+  background-color: #fff; /* Arka plan rengi */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Gölge efekti ekle */
+}
+
+canvas {
+  border: 1px solid #ccc;
+  margin: auto;
+  display: block;
+  max-width: 100%; /* Canvas boyutunu sınırlamak için */
+  height: auto; /* Yükseklik otomatik */
 }
 
 /* Responsive medya sorguları */

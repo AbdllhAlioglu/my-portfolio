@@ -18,8 +18,8 @@ function CertificatesAndEducation() {
             <a
               href={cert.pdf}
               className={styles.pdfLink}
-              target="_blank"
-              rel="noopener noreferrer"
+              target="_blank" // Yeni sekmede açılması için
+              rel="noopener noreferrer" // Güvenlik için
             >
               View Certificate (PDF)
             </a>
