@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# My Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to my personal portfolio website! This project showcases my skills, projects, and certifications in a single web application. It is built using JavaScript (React) and utilizes CSS modules for styling.
 
-## Available Scripts
+**Live Demo**: [https://abdullahalioglu-portfolio.vercel.app/](https://abdullahalioglu-portfolio.vercel.app/)
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+- [About the Project](#about-the-project)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contact](#contact)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## About the Project
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This portfolio website is designed to give an overview of who I am and what I do. It serves as a central hub to display my skills, projects I've worked on, and certifications I've earned. It's an ongoing project that I continually update as I learn and grow in my field.
 
-### `npm test`
+### Why I Built This
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+I wanted a place where I could present my work, skills, and achievements in a professional and structured way. By building this project, I also enhanced my skills in React and CSS modules, ensuring the project is modular, maintainable, and visually appealing.
 
-### `npm run build`
+## Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **About Me Section**: Learn more about my background and professional journey.
+- **Skills**: A detailed list of technologies and tools I am proficient in.
+- **Projects**: A showcase of the projects I have worked on, with brief descriptions and links to the repositories or live versions.
+- **Certifications**: A section dedicated to the certifications I have earned, with relevant details.
+- **Responsive Design**: The website is fully responsive, ensuring it looks great on all devices.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Technologies Used
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **React**: Frontend JavaScript library for building user interfaces.
+- **CSS Modules**: Modular and scoped CSS to keep styling maintainable.
+- **JavaScript (ES6+)**: Core programming language used for functionality.
+- **HTML5**: Semantic structure for the web application.

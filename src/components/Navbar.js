@@ -12,7 +12,7 @@ function Navbar() {
   return (
     <nav className={styles.nav}>
       <Link to="/" className={styles.logoLink}>
-        <img src="./images/stay.png" alt="Stay Logo" className={styles.logo} />
+        <img src="./images/Stay.png" alt="Stay Logo" className={styles.logo} />
       </Link>
       <button className={styles.menuButton} onClick={toggleMenu}>
         <i className={`fas ${isMenuOpen ? "fa-times" : "fa-bars"}`}></i>
