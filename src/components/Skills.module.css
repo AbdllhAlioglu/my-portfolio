@@ -2,11 +2,15 @@
   padding: 20px;
   background-color: #c6c6c6;
   border-radius: 25px;
+  width: 100%; /* Tüm genişliği kaplasın */
 }
 
 .skillsList {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(280px, 1fr)
+  ); /* Grid yapısı */
   gap: 20px;
   list-style: none;
   padding: 0;
@@ -14,9 +18,9 @@
 }
 
 .skillItem {
-  display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center; /* Ortalamak için text align ekleyelim */
 }
 
 @media (max-width: 768px) {
@@ -27,6 +31,9 @@
 
 @media (max-width: 480px) {
   .skillsList {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(180px, 1fr)
+    ); /* Daha küçük değer */
   }
 }
