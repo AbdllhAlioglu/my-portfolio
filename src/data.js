@@ -44,7 +44,7 @@ export const projectsData = [
     description:
       "A quiz application that tests your knowledge of JavaScript concepts and syntax.",
     photoName: "/images/quiz.png",
-    url: "javascript-quiz-dooz0f2fk-abdllhalioglus-projects.vercel.app",
+    url: "https://javascript-quiz-psi.vercel.app/",
     source: "https://github.com/AbdllhAlioglu/Javascript-Quiz",
   },
 ];

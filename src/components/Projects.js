@@ -8,8 +8,8 @@ function Projects() {
     <div className={styles.projectsContainer}>
       <ul className={styles.projectsList}>
         {projectsData.map((project) => (
-          <li className={styles.projectItem}>
-            <Project key={project.name} projectObj={project} />
+          <li key={project.name} className={styles.projectItem}>
+            <Project projectObj={project} />
           </li>
         ))}
       </ul>

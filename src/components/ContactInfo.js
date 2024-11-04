@@ -15,20 +15,17 @@ function ContactInfo() {
       // Backend'e POST isteği gönder
       await axios.post("http://localhost:5001/send-email", {
         name,
-        email,
+        email, // Kullanıcının girdiği e-posta adresi
         message,
       });
+      // Geri bildirim mesajını ayarla
       setStatus("Message sent successfully!");
-
-      // 4 saniye sonra mesajı kaybet
       setTimeout(() => {
         setStatus("");
       }, 4000);
     } catch (error) {
       console.error("Error sending message:", error);
       setStatus("Failed to send message.");
-
-      // 4 saniye sonra hata mesajını kaybet
       setTimeout(() => {
         setStatus("");
       }, 4000);
