@@ -47,6 +47,13 @@ export const projectsData = [
     url: "https://javascript-quiz-psi.vercel.app/",
     source: "https://github.com/AbdllhAlioglu/Javascript-Quiz",
   },
+  {
+    name: "Electro Shop",
+    description: "A simple e-commerce app built with React and Redux.",
+    photoName: "/images/Electro.png",
+    url: "https://electro-shop-cyan.vercel.app/",
+    source: "https://github.com/AbdllhAlioglu/electro-shop",
+  },
 ];
 
 export const skillsData = [
