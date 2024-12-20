@@ -1,26 +1,37 @@
 import React, { useState } from "react";
-import axios from "axios";
 import styles from "./ContactInfo.module.css";
+
 function ContactInfo() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const [formValues, setFormValues] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
   const [status, setStatus] = useState(""); // Başarı ya da hata durumu için
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormValues({ ...formValues, [name]: value });
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsLoading(true);
 
     try {
-      // Backend'e POST isteği gönder
-      await axios.post(
-        "https://abdullahalioglu-portfolio.vercel.app/api/send-email",
-        {
-          name,
-          email, // Kullanıcının girdiği e-posta adresi
-          message,
-        }
-      );
-      // Geri bildirim mesajını ayarla
+      const response = await fetch("/api/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formValues),
+      });
+
+      if (!response.ok) {
+        const text = await response.text();
+        throw new Error(`Error: ${text}`);
+      }
+
+      await response.json();
       setStatus("Message sent successfully!");
       setTimeout(() => {
         setStatus("");
@@ -31,6 +42,8 @@ function ContactInfo() {
       setTimeout(() => {
         setStatus("");
       }, 4000);
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -47,8 +60,9 @@ function ContactInfo() {
           <input
             type="text"
             id="name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
+            name="name"
+            value={formValues.name}
+            onChange={handleChange}
             required
           />
         </div>
@@ -57,22 +71,29 @@ function ContactInfo() {
           <input
             type="email"
             id="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            name="email"
+            value={formValues.email}
+            onChange={handleChange}
             required
           />
         </div>
+
         <div className={styles.formGroup}>
           <label htmlFor="message">Message</label>
           <textarea
             id="message"
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
+            name="message"
+            value={formValues.message}
+            onChange={handleChange}
             required
           ></textarea>
         </div>
-        <button type="submit" className={styles.submitButton}>
-          Send Message
+        <button
+          type="submit"
+          className={styles.submitButton}
+          disabled={isLoading}
+        >
+          {isLoading ? "Sending..." : "Send Message"}
         </button>
       </form>
       {status && (
