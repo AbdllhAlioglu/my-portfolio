@@ -21,7 +21,7 @@ function ContactInfo() {
 
     try {
       const response = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL}/api/send-email`,
+        "https://abdullahalioglu-portfolio.vercel.app/api/send-email",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
