@@ -51,7 +51,7 @@ export const projectsData = [
     name: "Electro Shop",
     description: "A simple e-commerce app built with React and Redux.",
     photoName: "/images/Electro.png",
-    url: "https://electro-shop-cyan.vercel.app/",
+    url: "https://electro-shop-7gde.vercel.app/",
     source: "https://github.com/AbdllhAlioglu/electro-shop",
   },
 ];
