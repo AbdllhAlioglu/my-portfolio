@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
 import styles from "./ContactInfo.module.css";
-
 function ContactInfo() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -13,11 +12,14 @@ function ContactInfo() {
 
     try {
       // Backend'e POST isteği gönder
-      await axios.post("http://localhost:5001/send-email", {
-        name,
-        email, // Kullanıcının girdiği e-posta adresi
-        message,
-      });
+      await axios.post(
+        "https://abdullahalioglu-portfolio.vercel.app/api/send-email",
+        {
+          name,
+          email, // Kullanıcının girdiği e-posta adresi
+          message,
+        }
+      );
       // Geri bildirim mesajını ayarla
       setStatus("Message sent successfully!");
       setTimeout(() => {
